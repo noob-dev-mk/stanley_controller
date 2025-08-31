@@ -34,9 +34,10 @@ The [f1tenth_gym_ros](https://github.com/f1tenth/f1tenth_gym_ros) (which we clon
 ## Stanley Implementation
 A separate stanley_pkg is created in the stanley_ws. The entire package is the repository with the same name.
 
-Firstly, to get the Stanley Package (stanley_pkg), clone stanley_ws fron this repo into ros2_ws/stanley_ws/src/.
+Firstly, to get the Stanley Package, clone this repo as stanley_pkg into your ros2_ws/stanley_ws/src/.
 ```bash
-map_path: '/sim_ws/src/f1tenth_gym_ros/maps/<map_yaml_file_name>'
+cd ros2_ws/stanley_ws/src
+git clone https://github.com/noob-dev-mk/stanley_controller stanley_pkg
 ```
 Now we need to change the map, add the map's .png and .yaml files in the map folder of the f1tenth_gym_gos package (Levine and Spielberg are already present). 
 
