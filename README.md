@@ -32,9 +32,9 @@ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 The [f1tenth_gym_ros](https://github.com/f1tenth/f1tenth_gym_ros) (which we cloned earlier) is used to get the simulation environment. Do check the repository to know more about the simulation, as well as keyboard teleop. It only supports ROS 2 Foxy, hence we are using Docker. 
 
 ## Stanley Implementation
-A separate stanley_pkg is created in the stanley_ws. The entire package is the repository with the same name.
+A separate stanley_pkg is to be created in the ros_ws/stanley_ws/src. The entire package is the repository.
 
-Firstly, to get the Stanley Package, clone this repo as stanley_pkg into your ros2_ws/stanley_ws/src/.
+Firstly, to get the Stanley Package, clone this repository as stanley_pkg into your ros2_ws/stanley_ws/src/ by following the below commands.
 ```bash
 cd ros2_ws/stanley_ws/src
 git clone https://github.com/noob-dev-mk/stanley_controller stanley_pkg
@@ -49,7 +49,7 @@ cd ros2_ws/stanley_ws/src
 ```
 We will use the Spielberg map for now as it is present by default, and its centerline.csv is also in the repository. So, **replace <map_yaml_file_name> with Spielberg_map**
 
-**NOTE:** To get more maps and their raceline as well as centerline csv [f1tenth_racetracks](https://github.com/f1tenth/f1tenth_racetracks.git).
+**NOTE:** To get more maps, their raceline as well as centerline csv [f1tenth_racetracks](https://github.com/f1tenth/f1tenth_racetracks.git).
 
 To start the controller, first make sure the simulation is running. In a separate terminal, do the following:
 ```bash
